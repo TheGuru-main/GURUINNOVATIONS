@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GURUINNOVATIONS — Light, Not lite. Elite.</title>
+  <meta name="description" content="GuruInnovations builds opportunity-driven software for communities that mainstream technology overlooks.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="brand">
+      <i class="fa-solid fa-gem brand-icon"></i>
+      <div class="brand-text">
+        <span class="brand-name">GURUINNOVATIONS</span>
+        <span class="brand-motto">Light, Not lite. Elite.</span>
+      </div>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#founder" class="nav-link">Founder</a>
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#mission" class="nav-link">Mission</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <i class="fa-solid fa-gem hero-icon"></i>
+      <h1 class="hero-title">GURUINNOVATIONS</h1>
+      <p class="hero-motto">Light, Not lite. Elite.</p>
+      <p class="hero-sub">A solo founder building digital infrastructure for communities that mainstream technology overlooks.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">Explore Products</a>
+        <a href="#contact" class="btn btn-secondary">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="founder">
+    <div class="container founder-grid">
+      <div class="founder-photo">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="founder-content">
+        <p class="section-label">Founder</p>
+        <h2 class="section-title">Idris Akeem</h2>
+        <p class="founder-roles">CEO · CTO · Director</p>
+        <blockquote class="founder-quote">
+          "I am a solo developer and founder building opportunity-driven software for communities that are often underserved."
+        </blockquote>
+        <p class="founder-bio">
+          Recently graduated from tertiary institution and pursuing the dream of uniting and building the community digitally — providing a digital powerhouse for those in undiscovered and underserved communities through straightforward, human-friendly technological innovations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="products">
+    <div class="container">
+      <p class="section-label center">Our Products</p>
+      <h2 class="section-title center">Five live products. One mission.</h2>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="mission">
+    <div class="container mission-inner">
+      <p class="section-label center">Our Mission</p>
+      <h2 class="section-title center">Digital infrastructure for real opportunity.</h2>
+      <p class="mission-text">
+        GuruInnovations exists to build digital infrastructure that creates real opportunity for communities that mainstream technology ignores.
+      </p>
+      <p class="mission-text">
+        Every product — from search to messaging to AI to commerce — exists to connect people, create access, and strengthen the community digitally.
+      </p>
+    </div>
+  </section>
+
+  <section class="section reveal" id="contact">
+    <div class="container contact-inner">
+      <p class="section-label center">Get in Touch</p>
+      <h2 class="section-title center">Let's build together.</h2>
+      <p class="contact-text">For partnerships, product inquiries, or collaboration:</p>
+      <div class="email-row">
+        <a href="mailto:idrisdfirst@gmail.com" class="email-link">idrisdfirst@gmail.com</a>
+        <button class="btn btn-secondary btn-copy" id="copyEmail" aria-label="Copy email">
+          <i class="fa-solid fa-copy"></i>
+          <span>Copy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <i class="fa-solid fa-gem footer-icon"></i>
+      <span>GURUINNOVATIONS</span>
+    </div>
+    <p class="footer-motto">Light, Not lite. Elite.</p>
+    <p class="footer-copy">© <span id="year"></span> Idris Akeem · <a href="mailto:idrisdfirst@gmail.com">idrisdfirst@gmail.com</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Email copied</div>
+
+<script src="script.js"></script>
+</body>
+</html>

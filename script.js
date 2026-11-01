@@ -7,23 +7,23 @@
       name: 'Lominii Search',
       logoHtml: '<i class="fa-solid fa-magnifying-glass"></i>',
       logoClass: 'product-logo--cyan',
-      tagline: 'Privacy-first search for the community',
+      tagline: 'Privacy-first search for communities — built to serve people, not advertisers.',
       url: 'https://lominii-search-beta.onrender.com'
     },
     {
       id: 'himate',
       name: 'Himate Messenger',
       logoHtml: '<i class="fa-solid fa-globe"></i>',
-      logoClass: 'product-logo--cyan',
-      tagline: 'Connection without extraction',
+      logoClass: 'product-logo--sand',
+      tagline: 'Community messaging without surveillance or extraction — connection that respects its users.',
       url: 'https://hi-mate-messenger-apiv1-0-0-1frontr.onrender.com'
     },
     {
       id: 'accodite',
       name: 'Accodite',
       logoHtml: '<i class="fa-solid fa-brain"></i>',
-      logoClass: 'product-logo--cyan',
-      tagline: 'Collaborative AI workspace with team rooms and in-browser codespace',
+      logoClass: 'product-logo--purple',
+      tagline: 'Collaborative AI workspace with team rooms, in-browser codespace, and a trained companion model.',
       url: 'https://accodite1.onrender.com'
     },
     {
@@ -31,15 +31,15 @@
       name: 'Shop Near Me',
       logoHtml: '<span class="pin-wrap"><i class="fa-solid fa-location-pin"></i><i class="fa-solid fa-circle"></i></span><span class="three-dots"><span></span><span></span><span></span></span>',
       logoClass: 'product-logo--shop',
-      tagline: 'Local commerce, real opportunity',
+      tagline: 'A location-based app so people find shops, services, and rides actually near them. A hyperlocal marketplace for everyday commerce — buyers discover nearby sellers, services, and dispatch.',
       url: 'https://shop-near-me-apiv1-0-0-1b.onrender.com'
     },
     {
       id: 'reccord',
       name: 'Reccord DB',
       logoHtml: '<i class="fa-solid fa-book-open"></i>',
-      logoClass: 'product-logo--cyan',
-      tagline: 'The data backbone for community-scale applications',
+      logoClass: 'product-logo--glow',
+      tagline: 'Long-term record keeping on an understandable database — high integrity, data security, fast lookup, and organized data.',
       url: 'https://reccord-db-apiv1-0-0-1q.onrender.com'
     }
   ];
@@ -49,7 +49,7 @@
     if (!grid) return;
     grid.innerHTML = PRODUCTS.map(function (p) {
       return '' +
-        '<a class="product-card" href="' + p.url + '" target="_blank" rel="noopener noreferrer">' +
+        '<a class="product-card ' + p.id + '" href="' + p.url + '" target="_blank" rel="noopener noreferrer">' +
           '<div class="product-logo ' + p.logoClass + '">' + p.logoHtml + '</div>' +
           '<div class="product-body">' +
             '<div class="product-header">' +
@@ -91,7 +91,7 @@
   }
 
   function initActiveNav() {
-    var sections = ['home', 'founder', 'products', 'mission', 'contact'];
+    var sections = ['home', 'founder', 'products', 'build', 'mission', 'contact'];
     var links = {};
     sections.forEach(function (id) {
       var link = document.querySelector('.nav-link[href="#' + id + '"]');
